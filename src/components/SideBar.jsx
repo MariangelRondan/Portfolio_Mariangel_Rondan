@@ -1,9 +1,13 @@
 import React, {useState} from 'react'
 import sidebarLogo from '../assets/sidebar.png'
-import contact from '../assets/contact-logo.png'
+// import contact from '../assets/contact-logo.png'
 import projects from '../assets/project-logo.png'
 import {FaGithub, FaInstagram, FaLinkedin} from 'react-icons/fa'
-
+import resume from "../assets/MyResume.svg"
+import Work from "../assets/Work.svg"
+import Projects from "../assets/Projects.svg"
+import Contact from "../assets/ContactMe.svg"
+import About from "../assets/About_Me.svg"
 
 
 
@@ -20,20 +24,20 @@ const handleNav= ( ) => {
     <div className='fixed w-full h-screen pt-20 bg-white/90 flex flex-col justify-center items-center z-20'>
 
         <a href='#main' className='w-[75%] h-14 flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
-        <img src={projects} alt='contact Logo' className='w-[18%]  px-0 ' />
+        <img src={About} alt='contact Logo' className='w-[18%]  px-0 ' />
         <span className='pl-4  px-0'>Projects</span>
         </a> 
         <a href='#main' className='w-[75%] h-14 flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
-        <img src={projects} alt='contact Logo' className='w-[18%]  px-0 ' />
+        <img src={Contact} alt='contact Logo' className='w-[18%]  px-0 ' />
         <span className='pl-4  px-0'>Skills</span>
         </a> 
         <a href='#main' className='w-[75%] h-14 flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
-        <img src={projects} alt='contact Logo' className='w-[18%]  px-0 ' />
+        <img src={resume} alt='contact Logo' className='w-[18%]  px-0 ' />
         <span className='pl-4  px-0'>Resume</span>
         </a> 
        
         <a href='#main' className='w-[75%] h-14 flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
-        <img src={contact} alt='contact Logo' className='w-[18%]  px-0 ' />
+        <img src={AboutMe} alt='contact Logo' className='w-[18%]  px-0 ' />
         <span className='pl-4  px-0'>Contact me</span>
         </a>  
     </div>
@@ -44,21 +48,24 @@ const handleNav= ( ) => {
 <div className='flex flex-col'>
 
     <a href='#main' className='rounded-full shadow-2xl shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300' >
-    <img src={projects} alt='contact Logo' className='w-10  px-0 ' />
+    <img src={About} alt='contact Logo' className='w-10  px-0 ' />
     
     </a>
     <a href='#main' className='rounded-full shadow-2xl shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300' >
-    <img src={projects} alt='contact Logo' className='w-10  px-0 ' />
+    <img src={resume} alt='contact Logo' className='w-10  px-0 ' />
     </a>
     <a href='#main' className='rounded-full shadow-2xl shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300' >
-    <img src={projects} alt='contact Logo' className='w-10  px-0 ' />
+    <img src={Work} alt='contact Logo' className='w-10  px-0 ' />
     </a>
     <a href='#main' className='rounded-full shadow-2xl shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300' >
-    <img src={projects} alt='contact Logo' className='w-10  px-0 ' />
+    <img src={Projects} alt='contact Logo' className='w-10  px-0 ' />
     </a>
     <a href='#main' className='rounded-full shadow-2xl shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300' >
-    <img src={contact} alt='contact Logo' className='w-16  px-0 ' />
+    <img src={Contact} alt='contact Logo' className='w-10  px-0 ' />
     </a>
+
+    
+
 
 
 

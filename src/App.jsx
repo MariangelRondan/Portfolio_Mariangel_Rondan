@@ -3,6 +3,7 @@ import FirstView from './components/FirstView'
 import Work from './components/Work'
 import Projects from './components/Projects'
 import Contact from './components/Contacts'
+import Skills from './components/Skills'
 function App() {
 
     return(
@@ -11,6 +12,7 @@ function App() {
             <FirstView/>
             <Work/>
             <Projects/>
+            <Skills/>
             <Contact/>
         </div>
     )
