@@ -7,12 +7,12 @@ const SkillsItem = ({img}) => {
   };
     return (
       
-      <div className="relative  h-auto w-full shadow-xl  shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-gray-200 to-[var(--main-text)] ">
+      <div className="relative  h-auto w-full shadow-xl  shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-gray-200 to-[#ff4719] ">
           <h1 className="text text-center text-xl font-bold text-[var(--main-text)]">{img.title}</h1>
           <div className="grid grid-cols-3 " >
           {img.logo.map((item, index) => (
   <img
-  className='p-4'
+  className='p-6'
   key={index}
   src={item}
   alt={item.split('/').pop().split('.').shift()}

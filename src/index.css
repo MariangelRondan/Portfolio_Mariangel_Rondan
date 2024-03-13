@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 :root {
-    --main-text: #c7713b; 
+    --main-icon: #a74304; 
+    --main-text:#464340
   }

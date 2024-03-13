@@ -1,8 +1,5 @@
 import React from "react";
 import SkillsItem from "./SkillsItem"
-import Tools from "./Tools";
-import LearningSkills from "./LearnignSkills";
-import FrontEnd from "./FrontEnd";
 import css from "../assets/css.svg"
 import figma from "../assets/figma.svg"
 import Firebase from "../assets/firebase.svg"
@@ -30,8 +27,8 @@ const tools={logo:[Jira,github,visualStudio,visualStudioCode],title:"Tools"}
 const learning ={logo:[Angular,Firebase, cSharp,dotnet],title:"Learnign"}
 
     return (
-        <div id="projects" className="max-w-[1048px] m-auto md:pl-20 p-4 py-16">
-            <h1 className="text-4xl font-bold text-center text-[var(--main-text)] mb-8">Skills</h1>
+        <div id="skills" className="max-w-[1048px] m-auto md: p-4 py-16">
+            <h1 className="text-4xl font-bold text-center text-[var(--main-text)] mb-12 ">Skills</h1>
       <div className="grid sm:grid-cols-2 gap-12 ">
         <SkillsItem   img={back} />
         <SkillsItem  img={front} />
