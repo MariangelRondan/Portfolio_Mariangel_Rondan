@@ -14,7 +14,7 @@ function FirstView() {
             <img className='w-full h-screen object-cover  ' src={neuron1} />
             <div className='w-full  h-screen  top-0 left-0 absolute bg-[#00000048]'>
 <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center '>
-   <h1 className='sm:text-5xl text-4xl font-bold text-[#ecfcf2]'>Welcome to my portfolio</h1> 
+   <h1 className='sm:text-5xl text-4xl font-bold text-[#ecfcf2]'>Mariangel Rondan</h1> 
    <h2 className='flex sm:text-3xl text-2xl pt-4 text-[#ecfcf2]'> <TypeAnimation  sequence={[
     'FullStack Developer',
     1000,
