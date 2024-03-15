@@ -4,19 +4,29 @@ import React from "react";
 const ProjectItem = ({img, title, details,link,credentials}) => {
 
     return (
-        <div className="relative flex flex-col items-center justify-center h-auto w-full shadow-xl  shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-gray-200 to-[#ff4719] ">
-            <img  src={img} alt="/"  className="rounded-xl group-hover:opacity-10"/>
-            <div className="hidden group-hover:block absolute top-[30%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
-                <h3 className="text-2xl m-2 font-bold text-white trancking-wider flex-start">
-                    {title}
-                </h3>
-                <p className="text-center m-2">{credentials? credentials : "Click on the link to know more"}</p>
-           <a href={link}  target='_blank' rel='noopener noreferrer' >
-            <p className="text-center p-3 rounded-lg bg-white text-[var(--main-text)] font-bold cursor-pointer text-lg ">Link</p>
-           </a>
-            </div>
-            <p className=" m-6 text-balance text-center  text-[var(--main-text)]  ">{details}</p>
-        </div>
+       <div className="flex max-h-screen items-center rounded-xl justify-center bg-neutral-900">
+
+<div className="group relative items-center justify-center overflow-hidden cursor-pointer rounded-xl hover:shadow-2xl hover:shadow-black transition-shadow ">
+<div className="h-[300px] w-auto">
+<img className="h-full w-full object-cover group-hover:scale-125 transition-transform duration-500" src={img} alt={title}/>
+</div>
+<div className="absolute inset-0 bg-gradient-to-b from-transparent to-neutral-900 hover:to-50%">
+<div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[70%] group-hover:translate-y-0 transition-all">
+<h1 className="text-3xl font-bold text-white">{title}</h1>
+<p className="text-lg  text-white mt-3 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{details}</p>
+<a href={link}  target='_blank' rel='noopener noreferrer' >
+<button className="rounded-full shadow shadow-black bg-neutral-900 py-2 px-3.5 text-sm text-white">Link</button>
+</a>
+</div>
+</div>
+</div>
+
+<div className="fixed bottom-16">
+
+</div>
+
+
+       </div>
     )
 }
 

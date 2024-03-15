@@ -1,38 +1,94 @@
 import React from "react";
+import image from "../assets/violet.jpg"
 
 const Contact = () => {
 
     return (
-        <div id="contact" className="text-[var(--main-text)] font-bold max-w-[1048px] mt-[20%]  flex- flex-col  items-center m-auto md:pl-20 p-4 py-16  shadow-xl bg-[#ffc7a2] shadow-gray-400 rounded-xl ">
-<h1 className="py-4 text-bold text-center  font-bold uppercase text-3xl" >Contact me</h1>
-        <form action="https://getform.io/f/lajnnoqa" method="POST" encType="multipart/form-data" >
-            <div className="grid md:grid-cols-2 gap-1  py-2 ml-19">
-           <div  className="m-4">
-           <div className=" md:col-span-2 gap-4 w-full ">
-                    <label className="uppercase text-sm py-2">Name</label>
-                <input className="border-2 rounded-lg p-3 flex w-full border-gray-300"  type="text" name='name' />
-                </div>
-                <div className="  md:col-span-2 gap-4 w-full  ">
-                    <label className="uppercase text-sm py-2">Email</label>
-                <input className="border-2 rounded-lg p-3 flex w-full border-gray-300"  type="email" name='email' />
-                </div>
-                <div className=" md:col-span-2 gap-4 w-full  py-2"> 
-                    <label className="uppercase text-sm py-2">Subject</label>
-                <input className="border-2 rounded-lg p-3 flex w-full border-gray-300"  type="text" name='subject' />
-                </div>
-                </div>
-                <div className="m-4 mt-4 mr-10">
-                <label className="uppercase text-sm py-2 ">Message</label>
-                <textarea className="border-2 rounded-lg p-3 w-full mt-2 flex" rows={7} name='message' ></textarea>
-                </div>
-            
-                </div>
-            <button className="bg-[var(--main-text)] text-gray-100 mt-4 ml-[30%] p-4 rounded-lg w-96">
-                Send
-            </button>
-        </form>
-        
+        <div className="flex min-h-full flex-1 mt-32 ">
+        <div className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+          <div className="mx-auto w-full max-w-sm lg:w-96">
+            <div>
+              
+              <h2 className="mt-8 text-2xl font-bold leading-9 tracking-tight uppercase text-gray-900">
+                Let's get in contact!
+              </h2>
+              
+            </div>
+
+            <div className="mt-10">
+              <div>
+                <form action="#" method="POST" className="space-y-6">
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                      Email 
+                    </label>
+                    <div className="mt-2">
+                      <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        autoComplete="email"
+                        required
+                        className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+                      Subject
+                    </label>
+                    <div className="mt-2">
+                      <input
+                        id="password"
+                        name="password"
+                        type="password"
+                        autoComplete="current-password"
+                        required
+                        className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+                      Message
+                    </label>
+                    <div className="mt-2">
+                      <textarea
+                        id="password"
+                       rows={8}
+                        type="password"
+                        autoComplete="current-password"
+                        required
+                        className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <button
+                      type="submit"
+                      className="flex w-full justify-center rounded-md bg-slate-900 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    >
+                      Send
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              
+            </div>
+          </div>
         </div>
+        <div className="relative hidden rounded-xl w-0 bg-[#ffffff59] flex-1 lg:block">
+          <img
+            className="absolute opacity-85 rounded-xl inset-0 h-full w-full object-cover"
+            src={image}
+            alt=""
+          />
+        </div>
+      </div>
     )
 }
 

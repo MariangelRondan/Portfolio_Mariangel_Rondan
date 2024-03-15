@@ -30,7 +30,7 @@ function scrollToElement(elementId) {
 
     return (
         <div>
-        <img onClick={handleNav} src={sidebarLogo} alt='sidebar Logo' className='fixed top-4 right-4 z-[99] box-border h-15 w-12 md:hidden cursor-pointer'/>
+<img onClick={handleNav} src={sidebarLogo} alt='sidebar Logo' className='absolute top-4 right-4 z-[99] box-border h-15 w-12  md:hidden'/>  
         {
     nav ? (
     <div className='fixed w-full h-screen pt-20 bg-white/90 flex flex-col justify-center items-center z-20'>

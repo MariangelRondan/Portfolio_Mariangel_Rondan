@@ -27,9 +27,9 @@ const tools={logo:[Jira,github,visualStudio,visualStudioCode],title:"Tools"}
 const learning ={logo:[Angular,Firebase, cSharp,dotnet],title:"Learnign"}
 
     return (
-        <div id="skills" className="max-w-[1048px] m-auto md: p-4 py-16">
+        <div id="skills" className="max-w-[1048px] m-auto md:pl-20 p-4 py-16">
             <h1 className="text-4xl font-bold text-center text-[var(--main-text)] mb-12 ">Skills</h1>
-      <div className="grid sm:grid-cols-2 gap-12 ">
+      <div className="grid sm:grid-cols-2 gap-14 ">
         <SkillsItem   img={back} />
         <SkillsItem  img={front} />
         <SkillsItem  img={tools} />

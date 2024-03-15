@@ -21,7 +21,7 @@ duration: "April 2021- Present"},
 
 const Work = () => {
     return (
-        <div id="work" className="max-w-[1040px] bg-[#ffc7a2] n-auto  p-4  md:ml-56 justify-center  py-16">
+        <div id="work" className="max-w-[1040px] n-auto  p-4  md:ml-56 justify-center  py-16">
             <h1 className="text-4xl font-bold  text-center text-[var(--main-text)] mb-8"> Work    </h1> 
     {data.map((item, id )=> (
         <WorkItem key={id} year={item.year} title={item.title} duration={item.duration} details={item.details} />)
