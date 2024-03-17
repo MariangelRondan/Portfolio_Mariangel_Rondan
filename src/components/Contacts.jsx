@@ -1,8 +1,15 @@
 import React from "react";
-import image from "../assets/violet.jpg"
+import {Cloudinary} from "@cloudinary/url-gen";
+
+import {AdvancedImage} from '@cloudinary/react';
+
+ 
 
 const Contact = () => {
+    const cld = new Cloudinary({cloud: {cloudName: 'di8wv9xue'}});
 
+    const myImage = cld.image('violet_mbdws3'); 
+    
     return (
         <div className="flex min-h-full flex-1 mt-32 ">
         <div className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
@@ -82,11 +89,13 @@ const Contact = () => {
           </div>
         </div>
         <div className="relative hidden rounded-xl w-0 bg-[#ffffff59] flex-1 lg:block">
-          <img
+        <AdvancedImage className="absolute opacity-85 rounded-xl inset-0 h-full w-full object-cover"  cldImg={myImage} />
+
+          {/* <img
             className="absolute opacity-85 rounded-xl inset-0 h-full w-full object-cover"
             src={image}
             alt=""
-          />
+          /> */}
         </div>
       </div>
     )

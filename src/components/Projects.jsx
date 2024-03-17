@@ -1,11 +1,17 @@
 import React from "react";
 import ProjectItem from "./ProjectItem"
-import RickAndMorty from '../assets/rickandMorty.png'
-import hyperMegaRed from '../assets/hyper-mega-red.png'
-import jap from "../assets/e-commerce.png"
-import drivers from "../assets/drivers-photo.png"
+
+import {Cloudinary} from "@cloudinary/url-gen";
+
 
 const Projects = () => {
+  const cld = new Cloudinary({cloud: {cloudName: 'di8wv9xue'}});
+
+  const hyperMegaRed = cld.image('hyper-mega-red_vwl4uw'); 
+  const jap = cld.image('e-commerce_zxw4fp'); 
+  const drivers = cld.image('drivers-photo_kl6cae'); 
+  const RickAndMorty = cld.image('rickandMorty'); 
+
 
     return (
         <div id="projects" className="max-w-[1048px] m-auto md:pl-20 p-4 py-16">

@@ -1,8 +1,14 @@
 import React from "react";
-import me from '../assets/Mariangel-Foto.png'
+import {Cloudinary} from "@cloudinary/url-gen";
+import {AdvancedImage} from '@cloudinary/react';
+
 
 
 const AboutMe = () => {
+  const cld = new Cloudinary({cloud: {cloudName: 'di8wv9xue'}});
+
+  const myImage = cld.image('Mariangel-Foto'); 
+
   return (
     <div className="relative z-10 mt-32 mb-32 bg-gray-900 pb-20 sm:mt-56 sm:pb-24 xl:pb-0">
     <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
@@ -19,10 +25,12 @@ const AboutMe = () => {
     <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
       <div className="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
         <div className="relative aspect-[2/1] h-full md:-mx-8 xl:mx-0 xl:aspect-auto">
-          <img
-  className="absolute inset-0 h-full w-full rounded-2xl bg-gray-800 object-cover shadow-2xl"            src={me}
+          {/* <img
+  className="absolute inset-0 h-full w-full rounded-2xl bg-gray-800 object-cover shadow-2xl"    src={}
             alt=""
-          />
+          /> */}
+                <AdvancedImage className="absolute inset-0 h-full w-full rounded-2xl bg-gray-800 object-cover shadow-2xl"  cldImg={myImage} />
+
         </div>
       </div>
       <div className="w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24">
@@ -57,18 +65,6 @@ const AboutMe = () => {
   );
 };
 
-//         <div id="about" classNameName="max-w-[1040px] items-center n-auto flex flex-col p-4  md:ml-24   py-16">
-//                 <h1 classNameName="text-4xl font-bold md:ml-56 text-center text-[var(--main-text)] mb-8">About Me</h1>
-//                 <img src={me} classNameName='w-[200px]   m-6  rounded-[600px] md:w-[300px]  md:absolute lg:ml-[82%] lg:mt-[10%]'/>    
-// <div classNameName='max-w-[700px] md:ml-52   flex md:mt-56  lg:ml-4 '>
 
-// <p classNameName='text-lg  md:mb-80  mx-6 my-12 w-full text-stone-600 md:text-2xl '>
-// </p>
-
-   
-  
-// </div>
-
-//     </div>
 
 export default AboutMe

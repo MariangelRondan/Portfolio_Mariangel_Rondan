@@ -1,5 +1,6 @@
 import React from "react";
 
+import {AdvancedImage} from '@cloudinary/react';
 
 const ProjectItem = ({img, title, details,link,credentials}) => {
 
@@ -8,7 +9,13 @@ const ProjectItem = ({img, title, details,link,credentials}) => {
 
 <div className="group relative items-center justify-center overflow-hidden cursor-pointer rounded-xl hover:shadow-2xl hover:shadow-black transition-shadow ">
 <div className="h-[300px] w-auto">
-<img className="h-full w-full object-cover group-hover:scale-125 transition-transform duration-500" src={img} alt={title}/>
+{/* <img className="h-full w-full object-cover group-hover:scale-125 transition-transform duration-500" src={img} alt={title}/> */}
+<AdvancedImage className="h-full w-full object-cover group-hover:scale-125 transition-transform duration-500"  cldImg={img} alt={title}/>
+
+
+
+
+
 </div>
 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-neutral-900 hover:to-50%">
 <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[70%] group-hover:translate-y-0 transition-all">

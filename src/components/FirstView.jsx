@@ -1,17 +1,25 @@
 import React from 'react'
 import neuron1 from '../assets/neuron1.jpg'
-import me from '../assets/Mariangel-Foto.png'
 import resume from "../assets/MyResume.svg"
 import MyResume from "../assets/MariangelRondan-resume.pdf"
+import {Cloudinary} from "@cloudinary/url-gen";
+import {AdvancedImage} from '@cloudinary/react';
 
+  
 import { TypeAnimation } from 'react-type-animation'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 
 function FirstView() {
+    const cld = new Cloudinary({cloud: {cloudName: 'di8wv9xue'}});
 
-    return(
-        <div id='main'>
-            <img className='w-full h-screen object-cover  ' src={neuron1} />
+  const bg = cld.image('neuron1_urvgfq'); 
+
+  
+  
+  return(
+      <div id='main'>
+            <AdvancedImage  className='w-full h-screen object-cover  ' cldImg={bg} />
+            {/* <img className='w-full h-screen object-cover  ' src={neuron1} /> */}
             <div className='w-full  h-screen  top-0 left-0 absolute bg-[#00000048]'>
 <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center '>
    <h1 className='sm:text-5xl text-4xl font-bold text-[#ecfcf2]'>Mariangel Rondan</h1> 
