@@ -2,10 +2,12 @@ import React from "react";
 import WorkItem from "./WorkItem";
 
 
-const data = [{year: 2024,
-    title: "BackEnd Developer Trainee - Shop Online New York",
-details: "Specializing in Node.js, Express, RESTful APIs, and SQL integration within the backend development team, I contribute to the creation of the corporate website, champion continuous improvement, and maintain a rigorous commitment to best practices for ensuring consistency across all backend services.",
-duration: "February 2024- Present" },
+const data = [
+   
+    {year: 2024,
+    title: "MEAN Stack Developer - TATA Consultancy Service",
+details: "I collaborate closely with multidisciplinary teams to design and develop innovative solutions using MEAN technologies (MongoDB, Express.js, AngularJS/Angular, Node.js) that meet client requirements and exceed their expectations. Additionally, I contribute to the entire software development lifecycle.",
+duration: "April 2024- Present" },
     {
         year: 2023,
     title: "FullStack Teaching Assistant - Henry",
@@ -16,6 +18,7 @@ duration: "November 2023- Present"},
 title: "Oil Refinery Operator - ANCAP",
 details: "I played a critical role in ensuring its seamless functionality by monitoring a vast array of intricate values and qualities. My primary responsibilities included maintaining a vigilant eye on various parameters to guarantee optimal performance and taking immediate action to address any deviations. This hands-on experience equipped me with valuable skills in problem-solving, fostering effective teamwork, and adeptly managing challenging situations, particularly those involving potential hazards. My role not only demanded technical expertise but also a keen attention to detail and a commitment to the highest standards of safety and efficiency.",
 duration: "April 2021- Present"},
+
 
 ]
 
