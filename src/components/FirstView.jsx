@@ -1,5 +1,4 @@
 import React from 'react'
-import neuron1 from '../assets/neuron1.jpg'
 import resume from "../assets/MyResume.svg"
 import MyResume from "../assets/MariangelRondan-resume.pdf"
 import {Cloudinary} from "@cloudinary/url-gen";

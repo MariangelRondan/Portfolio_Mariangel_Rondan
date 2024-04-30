@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
 import sidebarLogo from '../assets/sidebar.png'
 // import contact from '../assets/contact-logo.png'
-import projects from '../assets/project-logo.png'
-import resume from "../assets/MyResume.svg"
 import Work from "../assets/Work.svg"
 import Projects from "../assets/Projects.svg"
 import Contact from "../assets/ContactMe.svg"
