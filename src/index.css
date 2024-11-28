@@ -3,10 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --main-icon: #a74304;
-  --main-text: #cccc;
+  --main-color: #148a81;
+  --lila: #7989a5;
+  --blanquito: #eaf4dc;
+  --verde: #649e85;
+  --water: #76dec0;
+  --dark: #403d58;
 }
 html {
   scrollbar-width: thin;
   scrollbar-color: #13867e #f0f0f0;
+  font-family: "Orbitron", sans-serif;
+  background-color: var(--blanquito);
 }

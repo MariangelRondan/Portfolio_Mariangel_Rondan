@@ -1,0 +1,48 @@
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.hero-text {
+  font-family: "Arial", sans-serif;
+  font-size: 8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: var(--water);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+
+  text-shadow:
+    2px 2px 0px rgba(248, 244, 244, 0.1),
+    -2px -2px 0px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 4rem;
+  }
+}
+
+.border-gradient {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.border-gradient .text-center {
+  position: relative;
+  z-index: 1;
+}

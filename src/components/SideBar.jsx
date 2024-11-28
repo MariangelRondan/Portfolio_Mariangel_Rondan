@@ -88,7 +88,7 @@ const SideBar = () => {
             >
               <path
                 d="M50 10C50 10 20 40 20 60C20 75 32 90 50 90C68 90 80 75 80 60C80 40 50 10 50 10Z"
-                fill="#A3DCE4"
+                fill="#eaf4dc"
               />
             </svg>
           </div>
@@ -107,7 +107,7 @@ const SideBar = () => {
             >
               <path
                 d="M50 10C50 10 20 40 20 60C20 75 32 90 50 90C68 90 80 75 80 60C80 40 50 10 50 10Z"
-                fill="#A3DCE4"
+                fill="#eaf4dc"
               />
             </svg>{" "}
           </div>
@@ -125,7 +125,7 @@ const SideBar = () => {
             >
               <path
                 d="M50 10C50 10 20 40 20 60C20 75 32 90 50 90C68 90 80 75 80 60C80 40 50 10 50 10Z"
-                fill="#A3DCE4"
+                fill="#eaf4dc"
               />
             </svg>
           </div>
@@ -143,7 +143,7 @@ const SideBar = () => {
             >
               <path
                 d="M50 10C50 10 20 40 20 60C20 75 32 90 50 90C68 90 80 75 80 60C80 40 50 10 50 10Z"
-                fill="#A3DCE4"
+                fill="#eaf4dc"
               />
             </svg>
           </div>
@@ -161,7 +161,7 @@ const SideBar = () => {
             >
               <path
                 d="M50 10C50 10 20 40 20 60C20 75 32 90 50 90C68 90 80 75 80 60C80 40 50 10 50 10Z"
-                fill="#A3DCE4"
+                fill="#eaf4dc"
               />
             </svg>
           </div>
