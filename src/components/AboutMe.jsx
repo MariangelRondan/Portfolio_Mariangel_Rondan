@@ -18,15 +18,20 @@ const AboutMe = () => {
           </blockquote>
         </div>
 
-        <div className=" bg-[var(--blanquito)] text-[var(--main-color)] h-98 flex items-center   max-w-2xl   xl:flex-none">
-          <p className="px-10">
-            I'm a Full Stack Developer from Uruguay with a rich foundation in
-            scientific exploration. I've always found fulfillment in discovering
-            what lies beneath the surface and uncovering the "why" behind
-            things. I bring this same spirit of inquiry and exploration
-          </p>
+        <div className=" bg-[var(--blanquito)] text-[var(--main-color)] h-98 flex items-center      xl:flex-none">
+          <div className="max-w-lg mx-auto">
+            <p>
+              I am a software developer with a keen eye for creative solutions
+              and a strong belief in giving my best in everything I do.
+            </p>
+            <p>
+              Currently, I work as a Frontend Developer at TCS Uruguay and
+              create personal projects to keep my mind inspired and innovative.
+            </p>
+            <p> I feel fortunate to work in a field I truly enjoy.</p>
+          </div>
         </div>
-        <div className="   flex items-center justify-center  mx-auto max-w-xs   xl:flex-none">
+        <div className="flex items-center justify-center  mx-auto max-w-xs   xl:flex-none">
           <AdvancedImage className="   rounded-2xl  " cldImg={myImage} />
         </div>
       </div>

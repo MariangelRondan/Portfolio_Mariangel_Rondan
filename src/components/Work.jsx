@@ -6,7 +6,7 @@ const data = [
     year: 2024,
     title: "MEAN Stack Developer - TATA Consultancy Service",
     details:
-      "I collaborate closely with multidisciplinary teams to design and develop innovative solutions using MEAN technologies (MongoDB, Express.js, AngularJS/Angular, Node.js) that meet client requirements and exceed their expectations. Additionally, I contribute to the entire software development lifecycle.",
+      "Designed, developed, and optimized key features for one of the largest web applications of a globally recognized brand, leveraging Angular for scalable and high-performance solutions. Collaborated closely with designers, project managers, and cross-functional engineering teams to translate creative concepts into production-ready deliverables, delivering value to clients and stakeholders while ensuring alignment with business objectives and technical excellence.",
     duration: "April 2024- Present",
   },
   {
@@ -21,7 +21,7 @@ const data = [
     title: "Oil Refinery Operator - ANCAP",
     details:
       "I played a critical role in ensuring its seamless functionality by monitoring a vast array of intricate values and qualities. My primary responsibilities included maintaining a vigilant eye on various parameters to guarantee optimal performance and taking immediate action to address any deviations. This hands-on experience equipped me with valuable skills in problem-solving, fostering effective teamwork, and adeptly managing challenging situations, particularly those involving potential hazards. My role not only demanded technical expertise but also a keen attention to detail and a commitment to the highest standards of safety and efficiency.",
-    duration: "April 2021- Present",
+    duration: "April 2021- April 2023",
   },
 ];
 
