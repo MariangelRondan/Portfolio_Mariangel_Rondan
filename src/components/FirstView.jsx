@@ -1,11 +1,5 @@
 import React, { useEffect } from "react";
-import resume from "../assets/MyResume.svg";
-import water from "../assets/water.png";
 import "../App.css";
-
-import MyResume from "../assets/MariangelRondan-resume.pdf";
-import { TypeAnimation } from "react-type-animation";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function FirstView() {
   return (

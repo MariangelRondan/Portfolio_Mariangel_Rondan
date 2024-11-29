@@ -24,7 +24,7 @@ const SideBar = () => {
         className="absolute top-4 right-4 z-90 box-border h-15 w-12  md:hidden"
       />
       {nav ? (
-        <div className="fixed w-full h-screen  space-y-4  pt-20 bg-[#148a81]  bg-opacity-50 flex text-[var(--dark)] flex-col justify-center items-center z-20">
+        <div className="fixed w-full h-screen  space-y-4  pt-20 bg-[#148a81]  bg-opacity-70 flex text-[var(--dark)] flex-col justify-center items-center z-20">
           <div
             onClick={() => {
               scrollToElement("about");
@@ -77,7 +77,7 @@ const SideBar = () => {
             onClick={() => {
               scrollToElement("about");
             }}
-            className="     rounded-full   p-2 cursor-pointer  scale-110 ease-in duration-300 "
+            className="rounded-full   p-2 cursor-pointer  scale-110 ease-in duration-300 "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +96,7 @@ const SideBar = () => {
             onClick={() => {
               scrollToElement("work");
             }}
-            className="   rounded-full    p-2 cursor-pointer scale-110 ease-in duration-300"
+            className="rounded-full    p-2 cursor-pointer scale-110 ease-in duration-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ const SideBar = () => {
             onClick={() => {
               scrollToElement("projects");
             }}
-            className="   rounded-full  p-2 cursor-pointer scale-110 ease-in duration-300"
+            className="rounded-full  p-2 cursor-pointer scale-110 ease-in duration-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -38,13 +38,13 @@ const AboutMe = () => {
             <p> I feel fortunate to work in a field I truly enjoy.</p>
           </div>
         </div>
-        <div className="flex  items-center justify-around      xl:flex-none">
-          <div className="flex gap-4 flex-col  pt-6 ">
+        <div className="flex items-center justify-around   xl:flex-none">
+          <div className="flex gap-4 flex-col md:flex-row md:gap-10 pt-6 ">
             <a
               href="https://www.linkedin.com/in/mariangel-rondan"
               target="_blank"
               rel="noopener noreferrer"
-              className=" hover:scale-110 ease-in duration-300"
+              className="hover:scale-110 ease-in duration-300"
             >
               <FaLinkedin
                 color="white"
@@ -57,7 +57,7 @@ const AboutMe = () => {
               href="https://github.com/MariangelRondan"
               target="_blank"
               rel="noopener noreferrer"
-              className=" hover:scale-110 ease-in duration-300"
+              className="hover:scale-110 ease-in duration-300"
             >
               <FaGithub color="white" size={45} style={{ cursor: "pointer" }} />
             </a>
@@ -65,12 +65,15 @@ const AboutMe = () => {
             <a
               href={MyResume}
               download="MariangelRondan-resume.pdf"
-              className=" hover:scale-110 ease-in duration-300"
+              className="hover:scale-110 ease-in duration-300"
             >
               <img src={resume} alt="contact Logo" className="w-12  px-0 " />
             </a>
           </div>
-          <AdvancedImage className="   rounded-2xl w-40" cldImg={myImage} />
+          <AdvancedImage
+            className="rounded-2xl w-40 md:w-56"
+            cldImg={myImage}
+          />
         </div>
       </div>
     </div>
