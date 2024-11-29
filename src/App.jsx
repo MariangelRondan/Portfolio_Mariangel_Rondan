@@ -7,7 +7,7 @@ import Skills from "./components/Skills";
 import AboutMe from "./components/AboutMe";
 function App() {
   return (
-    <div className="content">
+    <div>
       <SideBar />
       <FirstView />
       <AboutMe />

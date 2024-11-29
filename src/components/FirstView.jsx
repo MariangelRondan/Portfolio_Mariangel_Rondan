@@ -10,8 +10,8 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 function FirstView() {
   return (
     <div className="bg-[url('assets/-water.png')] min-h-screen flex  justify-center">
-      <div className="w-full max-w-2xl mx-auto text-center bg-">
-        <figure className="relative isolate mt-40 bg-white/10 backdrop-blur-lg  border-gradient">
+      <div className="w-full max-w-2xl mx-auto text-center">
+        <figure className="relative w-full isolate mt-32 md:mt-40 bg-white/10 backdrop-blur-lg  border-gradient">
           <svg
             viewBox="0 0 162 128"
             fill="none"

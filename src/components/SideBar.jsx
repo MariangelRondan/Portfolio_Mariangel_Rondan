@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import sidebarLogo from "../assets/sidebar.png";
-
+import sidebarLogo from "../assets/olas-blancas.png";
 const SideBar = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
@@ -22,15 +21,15 @@ const SideBar = () => {
         onClick={handleNav}
         src={sidebarLogo}
         alt="sidebar Logo"
-        className="absolute top-4 right-4 z-[99] box-border h-15 w-12  md:hidden"
+        className="absolute top-4 right-4 z-90 box-border h-15 w-12  md:hidden"
       />
       {nav ? (
-        <div className="fixed w-full h-screen pt-20 bg-white/90 flex flex-col justify-center items-center z-20">
+        <div className="fixed w-full h-screen  space-y-4  pt-20 bg-[#148a81]  bg-opacity-50 flex text-[var(--dark)] flex-col justify-center items-center z-20">
           <div
             onClick={() => {
               scrollToElement("about");
             }}
-            className="w-[75%] h-14 flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+            className="w-[75%] h-14 flex justify-center items-center rounded-full shadow-lg bg-[url(assets/water.png)]  p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
             <span className="pl-4  px-0">About</span>
           </div>
@@ -38,7 +37,7 @@ const SideBar = () => {
             onClick={() => {
               scrollToElement("work");
             }}
-            className="w-[75%] h-14 flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+            className="w-[75%] h-14 flex justify-center items-center  rounded-full shadow-lg bg-[url(assets/water.png)]  p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
             <span className="pl-4  px-0">Work</span>
           </div>
@@ -46,7 +45,7 @@ const SideBar = () => {
             onClick={() => {
               scrollToElement("projects");
             }}
-            className="w-[75%] h-14 flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+            className="w-[75%] h-14 flex justify-center items-center rounded-full shadow-lg bg-[url(assets/water.png)]  p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
             <span className="pl-4  px-0">Projects</span>
           </div>
@@ -55,7 +54,7 @@ const SideBar = () => {
             onClick={() => {
               scrollToElement("skills");
             }}
-            className="w-[75%] h-14 flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+            className="w-[75%] h-14 flex justify-center items-center rounded-full shadow-lg bg-[url(assets/water.png)]  p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
             <span className="pl-4  px-0">Skills</span>
           </div>
@@ -64,7 +63,7 @@ const SideBar = () => {
             onClick={() => {
               scrollToElement("contact");
             }}
-            className="w-[75%] h-14 flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+            className="w-[75%] h-14 flex justify-center items-center rounded-full shadow-lg bg-[url(assets/water.png)]  p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
             <span className="pl-4  px-0">Contact me</span>
           </div>
@@ -72,13 +71,13 @@ const SideBar = () => {
       ) : (
         ""
       )}
-      <div className=" md:block  fixed top-[25%] z-10 text-white ">
-        <div className="flex flex-col">
+      <div className="md:block  fixed mt-6 md:mt-0 md:top-[25%] z-10 text-white ">
+        <div className="flex md:flex-col space-x-4 ml-2">
           <div
             onClick={() => {
               scrollToElement("about");
             }}
-            className="grid grid-cols-2 group/item   rounded-full ml-4 m-2 p-2 cursor-pointer  scale-110 ease-in duration-300 "
+            className="     rounded-full   p-2 cursor-pointer  scale-110 ease-in duration-300 "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +96,7 @@ const SideBar = () => {
             onClick={() => {
               scrollToElement("work");
             }}
-            className="grid grid-cols-2 group/item rounded-full ml-4  m-2 p-2 cursor-pointer scale-110 ease-in duration-300"
+            className="   rounded-full    p-2 cursor-pointer scale-110 ease-in duration-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +114,7 @@ const SideBar = () => {
             onClick={() => {
               scrollToElement("projects");
             }}
-            className="grid grid-cols-2 group/item rounded-full ml-4 m-2 p-2 cursor-pointer scale-110 ease-in duration-300"
+            className="   rounded-full  p-2 cursor-pointer scale-110 ease-in duration-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +132,7 @@ const SideBar = () => {
             onClick={() => {
               scrollToElement("skills");
             }}
-            className="grid grid-cols-2 group/item rounded-full ml-4  m-2 p-2 cursor-pointer scale-110 ease-in duration-300"
+            className="   rounded-full    p-2 cursor-pointer scale-110 ease-in duration-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +150,7 @@ const SideBar = () => {
             onClick={() => {
               scrollToElement("contact");
             }}
-            className="grid grid-cols-2 group/item rounded-full ml-4  m-2 p-2 cursor-pointer scale-110 ease-in duration-300"
+            className="   rounded-full    p-2 cursor-pointer scale-110 ease-in duration-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
