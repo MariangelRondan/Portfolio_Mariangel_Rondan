@@ -30,16 +30,29 @@
   position: relative;
   width: 600px;
   height: 350px;
+  background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+  backdrop-filter: blur(20px); /* Aumentar el desenfoque del fondo */
+  border-radius: 50px; /* Bordes redondeados si se desea */
+
+  /* Difuminado EXTREMAMENTE amplio sin líneas visibles */
+  box-shadow:
+    0 0 400px rgba(0, 0, 0, 0.4),
+    /* Difuminado cercano */ 0 0 800px rgba(0, 0, 0, 0.3),
+    /* Difuminado intermedio */ 0 0 1200px rgba(0, 0, 0, 0.2),
+    /* Difuminado amplio */ 0 0 2000px rgba(0, 0, 0, 0.1); /* Difuminado lejano máximo */
+
+  /* Eliminar bordes definidos para mezclar completamente */
   -webkit-mask-image: radial-gradient(
     circle,
-    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 70%,
     rgba(0, 0, 0, 0) 100%
   );
   mask-image: radial-gradient(
     circle,
-    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 1) 70%,
     rgba(0, 0, 0, 0) 100%
   );
+  border: none; /* Asegurar que no haya bordes visibles */
 }
 
 .border-gradient .text-center {

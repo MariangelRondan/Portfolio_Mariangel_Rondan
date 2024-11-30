@@ -14,7 +14,7 @@ const AboutMe = () => {
   return (
     <div
       id="about"
-      className="  bg-[url('assets/-water.png')] pb-10 sm:mt-24 max-h-98 sm:pb-24 xl:pb-0"
+      className="bg-[url('assets/-water.png')] pb-10 mt-24 max-h-98 sm:pb-24 xl:pb-0"
     >
       <div className="grid md:grid-cols-3">
         <div className="w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24">
@@ -25,7 +25,7 @@ const AboutMe = () => {
           </blockquote>
         </div>
 
-        <div className=" bg-[var(--blanquito)] text-[var(--main-color)] h-98 flex items-center      xl:flex-none">
+        <div className=" bg-[var(--blanquito)] text-[var(--main-color)] h-98 flex items-center xl:flex-none">
           <div className="max-w-lg mx-auto px-4 py-6">
             <p>
               I am a software developer with a keen eye for creative solutions

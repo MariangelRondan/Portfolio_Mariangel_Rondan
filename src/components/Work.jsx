@@ -1,5 +1,6 @@
 import React from "react";
 import WorkItem from "./WorkItem";
+import compu from "../assets/computer.png";
 
 const data = [
   {
@@ -27,23 +28,24 @@ const data = [
 
 const Work = () => {
   return (
-    <div
-      id="work"
-      className="max-w-[1040px] mx-auto text-[var(--main-color)]  mt-10 justify-center  py-16"
-    >
-      <h1 className="text-4xl font-bold  text-center text-[var(--dark)] mb-8">
-        {" "}
-        Work{" "}
-      </h1>
-      {data.map((item, id) => (
-        <WorkItem
-          key={id}
-          year={item.year}
-          title={item.title}
-          duration={item.duration}
-          details={item.details}
-        />
-      ))}
+    <div id="work" className="mx-auto text-[var(--blanquito)]  mt-32">
+      <div className="bg-[url('assets/water.png')]">
+        <h1 className="text-4xl text-center  md:text-6xl font-bold py-5">
+          Work
+        </h1>
+      </div>
+
+      <div className="max-w-[1040px] bg-white/10 backdrop-blur-lg shadow-outline mx-auto py-8 md:mt-12 ">
+        {data.map((item, id) => (
+          <WorkItem
+            key={id}
+            year={item.year}
+            title={item.title}
+            duration={item.duration}
+            details={item.details}
+          />
+        ))}
+      </div>
     </div>
   );
 };

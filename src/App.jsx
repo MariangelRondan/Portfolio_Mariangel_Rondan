@@ -13,7 +13,7 @@ function App() {
       <AboutMe />
       <Work />
       <Projects />
-      <Skills />
+
       <Contact />
     </div>
   );
