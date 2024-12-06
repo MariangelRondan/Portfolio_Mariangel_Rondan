@@ -19,7 +19,7 @@ function FirstView() {
             <use href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" x={86} />
           </svg>
           <blockquote className="text-2xl text-center leading-8 text-[var(--blanquito)] sm:text-5xl sm:leading-9">
-            "Inspiración y dedicación hacen la diferencia."
+            "Visión y dedicación hacen la diferencia."
           </blockquote>
           <figcaption className="mt-16 text-2xl leading-3">
             <div className="font-semibold  text-[var(--blanquito)] ">
