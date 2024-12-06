@@ -6,9 +6,9 @@ const ProjectItem = ({ img, title, details, link, credentials }) => {
   return (
     <div className="flex max-h-screen items-center rounded-xl justify-center ">
       <div className="group relative items-center justify-center overflow-hidden cursor-pointer rounded-xl hover:shadow-2xl hover:shadow-black transition-shadow ">
-        <div className="h-[500px]  w-auto">
+        <div className="w-full">
           <img
-            className="h-full w-full object-cover group-hover:scale-125 transition-transform duration-500"
+            className="object-cover group-hover:scale-125 transition-transform duration-500"
             src={img}
             alt={title}
           />
