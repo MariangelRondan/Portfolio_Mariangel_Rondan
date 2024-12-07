@@ -1,21 +1,14 @@
-import SideBar from "./components/SideBar";
-import FirstView from "./components/FirstView";
-import Work from "./components/Work";
-import Projects from "./components/Projects";
-import Contact from "./components/Contacts";
-import Skills from "./components/Skills";
-import AboutMe from "./components/AboutMe";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import ProjectDemo from "./components/ProjectDemo";
 function App() {
   return (
-    <div>
-      <SideBar />
-      <FirstView />
-      <AboutMe />
-      <Work />
-      <Projects />
-
-      <Contact />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/project-demo" element={<ProjectDemo />} />
+      </Routes>
+    </Router>
   );
 }
 
