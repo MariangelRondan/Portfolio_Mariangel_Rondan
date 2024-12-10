@@ -1,11 +1,16 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../App.css";
+import { Cloudinary } from "@cloudinary/url-gen";
+import { AdvancedImage } from "@cloudinary/react";
 
 function FirstView() {
+  const cld = new Cloudinary({ cloud: { cloudName: "di8wv9xue" } });
+  const bg = cld.image("-water");
   return (
-    <div className="bg-[url('assets/-water.png')] min-h-screen flex  justify-center">
-      <div className="w-full max-w-2xl mx-auto text-center">
-        <figure className="relative w-full isolate mt-60 md:mt-40 bg-white/10 backdrop-blur-lg  border-gradient">
+    <div id="main" className="relative">
+      <AdvancedImage className="w-full h-screen object-cover" cldImg={bg} />
+      <div className="absolute inset-0 flex flex-col justify-center items-center">
+        <figure className="relative w-full max-w-2xl mx-auto text-center bg-white/10 backdrop-blur-lg border-gradient p-6">
           <svg
             viewBox="0 0 162 128"
             fill="none"
@@ -22,7 +27,7 @@ function FirstView() {
             "Visión y dedicación hacen la diferencia."
           </blockquote>
           <figcaption className="mt-16 text-2xl leading-3">
-            <div className="font-semibold  text-[var(--blanquito)] ">
+            <div className="font-semibold text-[var(--blanquito)]">
               Mariángel Rondán
             </div>
             <div className="text-[#403D58]">Software Developer</div>

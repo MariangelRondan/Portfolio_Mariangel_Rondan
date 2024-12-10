@@ -1,6 +1,6 @@
 import React from "react";
 import WorkItem from "./WorkItem";
-import compu from "../assets/computer.png";
+import { Cloudinary } from "@cloudinary/url-gen";
 
 const data = [
   {
@@ -27,9 +27,16 @@ const data = [
 ];
 
 const Work = () => {
+  const cld = new Cloudinary({ cloud: { cloudName: "di8wv9xue" } });
+  const bg = cld.image("-water").toURL();
   return (
     <div id="work" className="mx-auto text-[var(--blanquito)]  mt-32">
-      <div className="bg-[url('assets/water.png')]">
+      <div
+        style={{
+          backgroundImage: `url(${bg})`,
+        }}
+        className="bg-cover bg-center "
+      >
         <h1 className="text-4xl text-center  md:text-6xl font-bold py-5">
           Work
         </h1>

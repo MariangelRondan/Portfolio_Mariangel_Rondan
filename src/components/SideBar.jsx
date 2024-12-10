@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../App.css";
+import cruz from "../assets/cruz-blanca-1.png";
+import olas from "../assets/olas-blancas.png";
+import { Cloudinary } from "@cloudinary/url-gen/index";
 
 const SideBar = () => {
   const [nav, setNav] = useState(false);
@@ -40,7 +43,8 @@ const SideBar = () => {
       observerOptions
     );
 
-    ["about", "work", "projects", "contact"].forEach((id, index) => {
+    const sectionIds = ["about", "work", "projects", "contact"];
+    sectionIds.forEach((id) => {
       const element = document.getElementById(id);
       if (element) {
         observer.observe(element);
@@ -50,24 +54,32 @@ const SideBar = () => {
     return () => observer.disconnect();
   }, []);
 
+  const cld = new Cloudinary({ cloud: { cloudName: "di8wv9xue" } });
+  const bg = cld.image("-water").toURL();
+
   return (
     <div>
       <img
         onClick={handleNav}
-        src={nav ? "/path-to-close-icon.png" : "/path-to-menu-icon.png"}
+        src={nav ? cruz : olas}
         alt="sidebar Logo"
-        className={`absolute right-0 box-border h-16 w-16 md:hidden z-[100] ${
+        className={`absolute right-0 box-border mr-4 h-16 w-16 md:hidden z-[100] ${
           nav ? "text-white" : ""
         }`}
       />
 
       {/* Mobile */}
       {nav && (
-        <div className="fixed w-full h-screen bg-[#148a81] space-y-4 bg-opacity-90 flex flex-col justify-center items-center z-20 text-[var(--dark)]">
-          {["about", "work", "projects", "contact"].map((item, index) => (
+        <div className="fixed w-full h-screen bg-[#eaf4dc] space-y-4 bg-opacity-80 flex flex-col justify-center items-center z-20 text-[var(--blanquito)]">
+          {["About", "Work", "Projects", "Contact"].map((item, index) => (
             <div
               key={index}
               onClick={() => scrollToElement(item.toLowerCase())}
+              style={{
+                backgroundImage: `url(${bg})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
               className="w-[75%] h-14 flex justify-center items-center rounded-full shadow-lg p-4 cursor-pointer hover:scale-110 ease-in duration-200"
             >
               <span className="pl-4 px-0">{item}</span>
@@ -77,7 +89,7 @@ const SideBar = () => {
       )}
 
       {/* Web */}
-      <div className="md:block fixed mt-6 md:mt-0 md:top-[25%] z-10 ">
+      <div className="md:block fixed mt-6 md:mt-0 md:top-[25%] z-10">
         <div className="flex md:flex-col md:space-y-4 space-y-0 space-x-4 md:space-x-0 ml-0">
           {["about", "work", "projects", "contact"].map((item, index) => (
             <div

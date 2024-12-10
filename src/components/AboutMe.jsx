@@ -8,13 +8,16 @@ import resume from "../assets/MyResume.svg";
 import "../App.css";
 const AboutMe = () => {
   const cld = new Cloudinary({ cloud: { cloudName: "di8wv9xue" } });
-
+  const bg = cld.image("-water").toURL();
   const myImage = cld.image("Mariangel-Foto");
 
   return (
     <div
       id="about"
-      className="bg-[url('assets/-water.png')] pb-10 mt-24 max-h-98 sm:pb-24 xl:pb-0"
+      style={{
+        backgroundImage: `url(${bg})`,
+      }}
+      className="bg-cover bg-center pb-10 mt-24 max-h-98 sm:pb-24 xl:pb-0"
     >
       <div className="grid md:grid-cols-3">
         <div className="w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24">
