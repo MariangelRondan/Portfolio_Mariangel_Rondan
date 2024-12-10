@@ -4,12 +4,12 @@ import { AdvancedImage } from "@cloudinary/react";
 import { useNavigate } from "react-router-dom";
 import { Cloudinary } from "@cloudinary/url-gen/index";
 
-const ProjectItem = ({ img, title, details, link, credentials }) => {
+const ProjectItem = ({ img, title, details, link, technologies }) => {
   const navigate = useNavigate();
   const cld = new Cloudinary({ cloud: { cloudName: "di8wv9xue" } });
   const handleClick = () => {
     navigate("/project-demo", {
-      state: { img, title, details, link },
+      state: { img, title, details, link, technologies },
     });
   };
   const cldImg = cld.image(img);
